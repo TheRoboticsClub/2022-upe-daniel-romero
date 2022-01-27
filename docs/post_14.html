@@ -1,0 +1,65 @@
+<!-- PAGE SAMPLE reusing html code -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="My work blog">
+    <meta name="author" content="Manuel">
+    <link rel="icon" href="assets/logo.png">
+
+    <title>My work blog</title>
+
+    <link href="libraries/bootstrap.min.css" rel="stylesheet">
+    <link href="css/blog.css" rel="stylesheet">
+    <script src="libraries/jquery.js"></script>
+
+    <script>
+        $(function(){
+            $('#header').load('html_base/header.html')
+        });
+    </script>
+    <script>
+        $(function(){
+            $('#sidebar').load('html_base/sidebar.html')
+        });
+    </script>
+    <script>
+        $(function(){
+            $('#footer').load('html_base/footer.html')
+        });
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+    
+        <div id="header"></div>
+
+        <main role="main" class="container">
+        <div class="row">
+            <div class="col-md-8 blog-main">
+
+            <div class="blog-post">
+                <h2 class="blog-post-title">Week XIV (May 31st - June 6th)</h2>
+                <p class="blog-post-meta">June 13th, 2021 by <a href="#">Manuel Pérez</a></p>
+
+                <p> RADI 2.4.1 is finally out for all the exercises! As stated in the previous post, it increases performance on linux + nvidia hosts. The only requirement is to install nvidia proprietary drivers in order to properly utilize the GPU.</p>
+                <p> The main task of this week was to check that all the exercises were working correctly with the new RADI, as the manager and the Dockerfile went through important changes. The main use case scenarios (obtained from Unibotics dashboard) are Windows 10, Linux and to a lesser extent, Mac.</p>
+                <p> The only exercises which gave us some trouble was the ones using Drones, and also trying to run the RADI on machines with low computational power. Because of that, we are planning to create a more robust connection of the RADI with the browser, checking that every step is completed successfully before starting the next one.</p>
+            </div>
+
+            </div>
+
+            <div class="col-md-4 blog-sidebar" id="sidebar"></div>
+
+        </div>
+
+        </main>
+
+        <div id="footer"></div>
+    </div>
+
+    <script src="libraries/bootstrap.min.js"></script>
+  </body>
+</html>

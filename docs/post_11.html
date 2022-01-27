@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="My work blog">
+    <meta name="author" content="Manuel">
+    <link rel="icon" href="assets/logo.png">
+
+    <title>My work blog</title>
+
+    <link href="libraries/bootstrap.min.css" rel="stylesheet">
+    <link href="css/blog.css" rel="stylesheet">
+    <script src="libraries/jquery.js"></script>
+
+    <script>
+        $(function(){
+            $('#header').load('html_base/header.html')
+        });
+    </script>
+    <script>
+        $(function(){
+            $('#sidebar').load('html_base/sidebar.html')
+        });
+    </script>
+    <script>
+        $(function(){
+            $('#footer').load('html_base/footer.html')
+        });
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+    
+        <div id="header"></div>
+
+        <main role="main" class="container">
+        <div class="row">
+            <div class="col-md-8 blog-main">
+
+            <div class="blog-post">
+                <h2 class="blog-post-title">Week XI (May 10th - 16th)</h2>
+                <p class="blog-post-meta">May 18th, 2021 by <a href="#">Manuel Pérez</a></p>
+
+                <p> RADI 2.3.18 is out! This version includes the Django webserver I worked on. It also includes David Valladares' refactorization of the exercise pages using Django templates. This will help us developers maintain and update the code, and it also improves the user exeperience as now the users only have to launch the RADI and connect to 127.0.0.0:8000 on a browser to use Robotics Academy.</p>
+                <p> Regarding the hardware acceleration for the RADI image, I was able to achieve some performance improvements working with Jovian-Dsouza RADI fork. With this new image we are getting RTF (+0.5) and FPS (+10) improvements and lower CPU usage (-10% on each core). This image is promising, but there are still some minor issues to fix and some tests to do before deploying it as the current RADI image.</p>
+            </div>
+
+            </div>
+
+            <div class="col-md-4 blog-sidebar" id="sidebar"></div>
+
+        </div>
+
+        </main>
+
+        <div id="footer"></div>
+    </div>
+
+    <script src="libraries/bootstrap.min.js"></script>
+  </body>
+</html>

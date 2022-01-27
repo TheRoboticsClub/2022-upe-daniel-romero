@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="My work blog">
+    <meta name="author" content="Manuel">
+    <link rel="icon" href="assets/logo.png">
+
+    <title>My work blog</title>
+
+    <link href="libraries/bootstrap.min.css" rel="stylesheet">
+    <link href="css/blog.css" rel="stylesheet">
+    <script src="libraries/jquery.js"></script>
+
+    <script>
+        $(function(){
+            $('#header').load('html_base/header.html')
+        });
+    </script>
+    <script>
+        $(function(){
+            $('#sidebar').load('html_base/sidebar.html')
+        });
+    </script>
+    <script>
+        $(function(){
+            $('#footer').load('html_base/footer.html')
+        });
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+    
+        <div id="header"></div>
+
+        <main role="main" class="container">
+        <div class="row">
+            <div class="col-md-8 blog-main">
+
+            <div class="blog-post">
+                <h2 class="blog-post-title">Week VIII (April 19th - 25th)</h2>
+                <p class="blog-post-meta">April 23rd, 2021 by <a href="#">Manuel Pérez</a></p>
+
+                <p> As previously mentioned, Unibotics got new users so we focused on easing the use of the platform. For that purpose I recorded two videos explaining how to sign up and how to properly start an exercise using local backend (with Docker). These are the two videos:</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Zqb9uSySBwQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p></p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/1qxQ81UT-PI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p> I also fixed the scope problems of the user defined functions with the help of other Robotics Academy collaborator. I also continued integrating into Unibotics the new exercise optimizations made on Robotics Academy, this time regarding the exercise 3D Visual Reconstruction.</p>
+            </div>
+
+            </div>
+
+            <div class="col-md-4 blog-sidebar" id="sidebar"></div>
+
+        </div>
+
+        </main>
+
+        <div id="footer"></div>
+    </div>
+
+    <script src="libraries/bootstrap.min.js"></script>
+  </body>
+</html>

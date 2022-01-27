@@ -1,0 +1,65 @@
+<!-- PAGE SAMPLE reusing html code -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="My work blog">
+    <meta name="author" content="Manuel">
+    <link rel="icon" href="assets/logo.png">
+
+    <title>My work blog</title>
+
+    <link href="libraries/bootstrap.min.css" rel="stylesheet">
+    <link href="css/blog.css" rel="stylesheet">
+    <script src="libraries/jquery.js"></script>
+
+    <script>
+        $(function(){
+            $('#header').load('html_base/header.html')
+        });
+    </script>
+    <script>
+        $(function(){
+            $('#sidebar').load('html_base/sidebar.html')
+        });
+    </script>
+    <script>
+        $(function(){
+            $('#footer').load('html_base/footer.html')
+        });
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+    
+        <div id="header"></div>
+
+        <main role="main" class="container">
+        <div class="row">
+            <div class="col-md-8 blog-main">
+
+            <div class="blog-post">
+                <h2 class="blog-post-title">Week XII (May 17th - 23rd)</h2>
+                <p class="blog-post-meta">May 26th, 2021 by <a href="#">Manuel Pérez</a></p>
+
+                <p> The main task of this week was to continue working on the RADI 2.4. We found out that the issues we had with this image were bigger than we thought. Some of the performance boost came from the GZServer not being able to run properly. GZClient is running accelerated, but the window is not being usable, as it has constant flashes.</p>
+                <p> Besides that, I also updated Vacuum Cleaner and Vacuum Cleaner Loc exercises on both Unibotics and Robotics Academy. Now, the available methods for the user are unified between exercises.</p>
+                <p> I'm also working now on Unibotics and Robotics Academy forums, supporting the users who experience some problems. As an example, last week we got this <a href=https://forum.unibotics.org/t/doesnt-connect-to-docker/382>bug report</a> which became an issue on Robotics Academy that I solved.</p>
+            </div>
+
+            </div>
+
+            <div class="col-md-4 blog-sidebar" id="sidebar"></div>
+
+        </div>
+
+        </main>
+
+        <div id="footer"></div>
+    </div>
+
+    <script src="libraries/bootstrap.min.js"></script>
+  </body>
+</html>

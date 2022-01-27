@@ -1,0 +1,72 @@
+<!-- PAGE SAMPLE reusing html code -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="My work blog">
+    <meta name="author" content="Manuel">
+    <link rel="icon" href="assets/logo.png">
+
+    <title>My work blog</title>
+
+    <link href="libraries/bootstrap.min.css" rel="stylesheet">
+    <link href="css/blog.css" rel="stylesheet">
+    <script src="libraries/jquery.js"></script>
+
+    <script>
+        $(function(){
+            $('#header').load('html_base/header.html')
+        });
+    </script>
+    <script>
+        $(function(){
+            $('#sidebar').load('html_base/sidebar.html')
+        });
+    </script>
+    <script>
+        $(function(){
+            $('#footer').load('html_base/footer.html')
+        });
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+    
+        <div id="header"></div>
+
+        <main role="main" class="container">
+        <div class="row">
+            <div class="col-md-8 blog-main">
+
+            <div class="blog-post">
+                <h2 class="blog-post-title">Week XIII (May 24th - 30th)</h2>
+                <p class="blog-post-meta">May 29th, 2021 by <a href="#">Manuel Pérez</a></p>
+
+                <p> RADI 2.4 is almost ready! I found out the proper configuration to run GZServer and GZClient with hardware acceleration. The final solution uses VirtualGL, TurboVNC and Nvidia drivers to utilize the GPU inside the container.</p>
+                <p> The performance measurements are (measured on Follow Line Exercise, with CPU intel i7 and GPU nvidia 1660ti):</p>
+                <ul>
+                    <li>Real Time Factor: from 0.93 to 0.98 </li>
+                    <li>CPU usage: from 70% to 45%</li>
+                    <li>RAM usage: from 8.3GB to 7.3GB</li>
+                    <li>GZClient FPS: from 22 to 47</li>
+                </ul>
+                <p> Now, the application responds much faster and the RTF is close to 1. All the current exercises are having similar performance improvements.</p>
+                <p> We now have to test on other setups to confirm the results, and integrate this configuration with the previous one, as our users may or may not fullfill the requirements to run with hardware acceleration.</p>
+            </div>
+
+            </div>
+
+            <div class="col-md-4 blog-sidebar" id="sidebar"></div>
+
+        </div>
+
+        </main>
+
+        <div id="footer"></div>
+    </div>
+
+    <script src="libraries/bootstrap.min.js"></script>
+  </body>
+</html>

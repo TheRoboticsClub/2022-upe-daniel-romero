@@ -1,0 +1,67 @@
+<!-- PAGE SAMPLE reusing html code -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="My work blog">
+    <meta name="author" content="Manuel">
+    <link rel="icon" href="assets/logo.png">
+
+    <title>My work blog</title>
+
+    <link href="libraries/bootstrap.min.css" rel="stylesheet">
+    <link href="css/blog.css" rel="stylesheet">
+    <script src="libraries/jquery.js"></script>
+
+    <script>
+        $(function(){
+            $('#header').load('html_base/header.html')
+        });
+    </script>
+    <script>
+        $(function(){
+            $('#sidebar').load('html_base/sidebar.html')
+        });
+    </script>
+    <script>
+        $(function(){
+            $('#footer').load('html_base/footer.html')
+        });
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+    
+        <div id="header"></div>
+
+        <main role="main" class="container">
+        <div class="row">
+            <div class="col-md-8 blog-main">
+
+            <div class="blog-post">
+                <h2 class="blog-post-title">Week XVIII (June 28th - July 4th)</h2>
+                <p class="blog-post-meta">July 4th, 2021 by <a href="#">Manuel Pérez</a></p>
+
+                <p> This is my last week as an internship in JdeRobot. I want to thank my mentors JoseMaría, Francisco and David as they helped me a lot during this months. I learnt a lot from this internship: new technologies (Docker, Django), new languages (Python), and most important, I experienced working and developing on a real and active platform.</p>
+                <p> I spent this week working on the Windows accelerated version of Robotics Academy. The solution implemented for Ubuntu hosts is not applicable to Windows as it uses VirtualGL along the Direct Rendering Infrastructure device, which is not present in Windows Subsystem Linux.</p>
+                <p> We also released a new version of the RADI which included all the exercises migrated to ROS Noetic. The whole infrastructure is now working with this new version of ROS and Python 3.</p>
+                <p> The new objectives of the platform is to continue evolving the backend (adding GPU Windows support, making it more robust, migrating it to ROS Foxy) and continue expanding the contents (adding more exercises and tools as RViz). I am thrilled to see what the future will look for Unibotics and Robotics Academy.</p> 
+                <p> See you!</p>
+            </div>
+
+            </div>
+
+            <div class="col-md-4 blog-sidebar" id="sidebar"></div>
+
+        </div>
+
+        </main>
+
+        <div id="footer"></div>
+    </div>
+
+    <script src="libraries/bootstrap.min.js"></script>
+  </body>
+</html>

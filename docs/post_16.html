@@ -1,0 +1,65 @@
+<!-- PAGE SAMPLE reusing html code -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="My work blog">
+    <meta name="author" content="Manuel">
+    <link rel="icon" href="assets/logo.png">
+
+    <title>My work blog</title>
+
+    <link href="libraries/bootstrap.min.css" rel="stylesheet">
+    <link href="css/blog.css" rel="stylesheet">
+    <script src="libraries/jquery.js"></script>
+
+    <script>
+        $(function(){
+            $('#header').load('html_base/header.html')
+        });
+    </script>
+    <script>
+        $(function(){
+            $('#sidebar').load('html_base/sidebar.html')
+        });
+    </script>
+    <script>
+        $(function(){
+            $('#footer').load('html_base/footer.html')
+        });
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+    
+        <div id="header"></div>
+
+        <main role="main" class="container">
+        <div class="row">
+            <div class="col-md-8 blog-main">
+
+            <div class="blog-post">
+                <h2 class="blog-post-title">Week XVI (June 14th - 20th)</h2>
+                <p class="blog-post-meta">June 17th, 2021 by Manuel Pérez</p>
+
+                <p> On this week I migrated all Unibotics exercises to use the new RADI 2.4.2 so users with linux and nvidia GPUs can get a large performance boost.</p>
+                <p> We had some problems with the farm PCs' and David Roldan and I worked to solve them. The farm are some computers which offer the backend via internet. This is usefull for URJC students whom doesn't meet the minimum requirements to run the RADI on their pcs.</p>
+                <p> Additionally, I created a shell script for Unibotics D3 to renew https certificates monthly.</p>
+            </div>
+
+            </div>
+
+            <div class="col-md-4 blog-sidebar" id="sidebar"></div>
+
+        </div>
+
+        </main>
+
+        <div id="footer"></div>
+    </div>
+
+    <script src="libraries/bootstrap.min.js"></script>
+  </body>
+</html>
