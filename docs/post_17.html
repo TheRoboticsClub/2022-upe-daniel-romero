@@ -1,11 +1,10 @@
-<!-- PAGE SAMPLE reusing html code -->
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="My work blog">
-    <meta name="author" content="Manuel">
+    <meta name="author" content="Daniel">
     <link rel="icon" href="assets/logo.png">
 
     <title>My work blog</title>
@@ -15,44 +14,43 @@
     <script src="libraries/jquery.js"></script>
 
     <script>
-        $(function(){
+        $(function () {
             $('#header').load('html_base/header.html')
         });
     </script>
     <script>
-        $(function(){
+        $(function () {
             $('#sidebar').load('html_base/sidebar.html')
         });
     </script>
     <script>
-        $(function(){
+        $(function () {
             $('#footer').load('html_base/footer.html')
         });
     </script>
-  </head>
+</head>
 
-  <body>
+<body>
     <div class="container">
-    
+
         <div id="header"></div>
 
         <main role="main" class="container">
-        <div class="row">
-            <div class="col-md-8 blog-main">
+            <div class="row">
+                <div class="col-md-8 blog-main">
 
-            <div class="blog-post">
-                <h2 class="blog-post-title">Week XVII (June 21st - 27th</h2>
-                <p class="blog-post-meta">July 4th, 2021 by <a href="#">Manuel Pérez</a></p>
-                <p> We are now migrating the whole Robotics Academy infrastructure to run on ROS Noetic instead of ROS Melodic. After helping with the migration, I ran some tests and published the new version, on Robotics Academy and Unibotics.</p>
-                <p> I worked with a colleague to implement a measure value (RTF) into all the current exercises. This value is helpful as it states the correlation between the time in the real world and the time of the simulation. A value of 1 indicates a perfect simulation, and values closer to 0 indicates worse performance.</p>
-                <p> I also worked on a new script that checks periodically that the Unibotics server is up and running.</p>
+                    <div class="blog-post">
+                        <h2 class="blog-post-title">Week XVII (May 16th - 20th)</h2>
+                        <p class="blog-post-meta">January 25, 2022 by <a href="#">Daniel Romero</a></p>
+
+                        <p>*Introducir experiencia semana 17*</p>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4 blog-sidebar" id="sidebar"></div>
+
             </div>
-
-            </div>
-
-            <div class="col-md-4 blog-sidebar" id="sidebar"></div>
-
-        </div>
 
         </main>
 
@@ -60,5 +58,5 @@
     </div>
 
     <script src="libraries/bootstrap.min.js"></script>
-  </body>
+</body>
 </html>
